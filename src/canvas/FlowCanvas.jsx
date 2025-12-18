@@ -9,6 +9,7 @@ import {
 import "@xyflow/react/dist/style.css";
 import { useAppStore } from "../store";
 import ServiceNode from "./ServiceNode";
+import { SiPostgresql, SiMongodb, SiRedis } from 'react-icons/si';
 
 const nodeTypes = { service: ServiceNode };
 
@@ -18,18 +19,21 @@ const initialNodes = [
     type: "service",
     position: { x: 100, y: 100 },
     data: { label: "Postgres", status: "success", value: 20 },
+    icon: SiPostgresql,
   },
   {
     id: "2",
     type: "service",
     position: { x: 400, y: 100 },
-    data: { label: "Redis", status: "error", value: 20 },
+    data: { label: "Redis", status: "error", value: 20},
+    icon: SiRedis,
   },
   {
     id: "3",
     type: "service",
     position: { x: 250, y: 300 },
-    data: { label: "MongoDB", status: "error", value: 20 },
+    data: { label: "MongoDB", status: "error", value: 20},
+    icon: SiMongodb,
   },
 ];
 

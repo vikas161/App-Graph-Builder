@@ -7,19 +7,8 @@ const STATUS = {
   error: "bg-red-900 text-red-400",
 };
 
-import { FaGithub, FaNodeJs } from 'react-icons/fa';
-import { SiPostgresql, SiMongodb, SiMysql, SiRedis } from 'react-icons/si';
 
-const icons = [FaGithub, SiPostgresql, SiMongodb, FaNodeJs, SiMysql, SiRedis];
 
-// const icons = [
-//   { component: FaGithub, name: 'GitHub' },
-//   { component: SiPostgresql, name: 'PostgreSQL' },
-//   { component: SiMongodb, name: 'MongoDB' },
-//   { component: FaNodeJs, name: 'Node.js' },
-//   { component: SiMysql, name: 'MySQL' },
-//   { component: SiRedis, name: 'Redis' },
-// ];
 
 
 export default function ServiceNode({ data, selected }) {
@@ -33,9 +22,8 @@ export default function ServiceNode({ data, selected }) {
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded bg-[#1a1a1a] flex items-center justify-center">
-            {/* <SiPostgresql size={20} color="white" /> */}
-             
-      
+           
+                icon
           </div>
           <span className="font-semibold">{data.label}</span>
         </div>
